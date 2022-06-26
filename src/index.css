@@ -16,7 +16,7 @@ body {
 .App{
   max-width: 500px;
   padding: 20px;
-  height: 100vh;
+  /* height: 100vh; */
   margin: auto;
   text-align: center;
   /* display: flex;  */

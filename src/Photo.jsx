@@ -9,6 +9,9 @@ function Photo(){
             <img src="img/ny_1.jpg" alt="BigCo Inc. logo"/>
             <img src="img/ny_1.jpg" alt="BigCo Inc. logo"/>
             <img src="img/ny_1.jpg" alt="BigCo Inc. logo"/> 
+            <img src="img/ny_1.jpg" alt="BigCo Inc. logo"/> 
+            <img src="img/ny_1.jpg" alt="BigCo Inc. logo"/> 
+            <img src="img/ny_1.jpg" alt="BigCo Inc. logo"/> 
         </div>
         
     )
