@@ -1,6 +1,7 @@
 img{
-    width: 190px;
+    width: 200px;
     margin: 8px;
+    border-radius: 10px;
 }
 
 .photo{
@@ -9,3 +10,4 @@ img{
     align-items: center;
     justify-content: center;
 }
+

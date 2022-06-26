@@ -1,8 +1,13 @@
 .menuBar{
     display: inline-block;
     margin-top: 18px;
+  
     /* display: flex; */
     /* align-items: center; */
+}
+
+.inactive{
+    color: #c7cacf8f;
 }
 
 .tab{

@@ -41,9 +41,9 @@ function App() {
 
             <div className={styles.menuBar}>
                 <ul className={styles.tab}>
-                    <li className={`${menu === 0? 'active': ''} ${styles.tab_li}`} onClick={()=>changeMenu(0)}>Photo</li>
-                    <li className={`${menu === 1? 'active': ''}`} onClick={()=>changeMenu(1)}>Log</li>
-                    <li className={`${menu === 2? 'active': ''}`} onClick={()=>changeMenu(2)}>About Me</li> 
+                    <li className={`${menu === 0? 'active': `${styles.inactive}`} ${styles.tab_li}`} onClick={()=>changeMenu(0)}>Photo</li>
+                    <li className={`${menu === 1? 'active': `${styles.inactive}`}`} onClick={()=>changeMenu(1)}>Log</li>
+                    <li className={`${menu === 2? 'active': `${styles.inactive}`}`} onClick={()=>changeMenu(2)}>About Me</li> 
                 </ul>
             </div>
             <div className="contentArea">
