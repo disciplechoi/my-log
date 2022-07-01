@@ -9,7 +9,7 @@ function Profile(){
             <div className={styles.profile_bio}>
                 <h2>🔥 Love spicy food</h2>
                 <h2>🔥 Love travel</h2>
-                <h2>🔥 Love bags</h2>
+                <h2>🔥 Love bags & cats</h2>
             </div>         
         </div>
     )

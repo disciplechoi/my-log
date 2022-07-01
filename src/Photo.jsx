@@ -1,11 +1,12 @@
-import {useCallback, useRef, useState} from "react";
+import {useCallback, useEffect, useRef, useState} from "react";
 import styles from "./Photo.module.css";
 import Image from "./Image";
 
 function Photo(){
 
-    const [style, setStyle] = useState("default");
-    const imgUrls= ["img/56600019.JPG"
+   // let numberOfImg = 6;
+    const [numberOfImg, setNumberOfImg] = useState(6);
+    const imgUrls = ["img/56600019.JPG"
     ,"img/56600030.JPG"
     ,"img/67250007.JPG"
     ,"img/67250027.JPG"
@@ -14,15 +15,26 @@ function Photo(){
     ,"img/67250007.JPG"
     ,"img/67250027.JPG"
     ,"img/67250031.JPG"
-    ,"img/ny_1.JPG"
-    ];
+    ,"img/ny_1.JPG"]
 
-    const photos = imgUrls.slice(0,6).map((url)=>
+
+
+    const photos = imgUrls.slice(0,numberOfImg).map((url)=>
         <Image src={url}></Image>
     )
 
+
+    //let photos2 = '';
+    // photos2= imgUrls.slice(6,12).map((url)=>
+    // <Image src={url}></Image>
+    // )
+
     const moreImg = ()=>{
-      
+        setNumberOfImg(numberOfImg=>numberOfImg+6);
+       
+    //     setPhotos2(imgUrls.slice(6,12).map((url)=>
+    //     <Image src={url}></Image>)
+    // )
     }
  
 
@@ -41,6 +53,8 @@ function Photo(){
             <img src="img/67250027.jpg" alt="BigCo Inc. logo"/> 
             <img src="img/67250031.jpg" alt="BigCo Inc. logo"/> 
             <img src="img/ny_1.jpg" alt="BigCo Inc. logo"/>  */}
+            <button onClick={moreImg}>more</button>
+           
         </div>
         
     )
